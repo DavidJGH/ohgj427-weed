@@ -11,7 +11,7 @@ public class GrassSpawner : MonoBehaviour
     private float radius = 9.5f;
 
     [SerializeField]
-    private int count = 20;
+    public int count = 20;
 
     [SerializeField]
     private GameObject prefab;
@@ -24,7 +24,7 @@ public class GrassSpawner : MonoBehaviour
     }
 
     [Button]
-    void Generate()
+    public void Generate()
     {
         Clear();
         for (int i = 0; i < count; i++)
