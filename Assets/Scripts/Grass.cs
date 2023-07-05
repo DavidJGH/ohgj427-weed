@@ -17,7 +17,11 @@ public class Grass : MonoBehaviour
     void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
-        spriteRenderer.sprite = sprites[Random.Range(0, sprites.Length)];
+        if (sprites != null && sprites.Length > 0)
+        {
+            spriteRenderer.sprite = sprites[Random.Range(0, sprites.Length)];
+        }
+
         spriteRenderer.sortingOrder = -(int)(transform.position.y * 100);
     }
 

@@ -412,8 +412,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 236911789}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.25, y: 0, z: 0}
-  m_LocalScale: {x: 9.5, y: 50, z: 9.5}
+  m_LocalPosition: {x: 15.125, y: 0, z: 0}
+  m_LocalScale: {x: 19.24985, y: 50, z: 9.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -713,7 +713,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 4.65
   count: 2400
-  prefab: {fileID: 6952258063624776132, guid: 505156163c0f88b41b34cdb9d4751800, type: 3}
+  grassPrefab: {fileID: 6952258063624776132, guid: 505156163c0f88b41b34cdb9d4751800, type: 3}
+  flowerPrefabs:
+  - {fileID: 6952258063624776132, guid: 1756ae45f05f7394784cd9ba11788b5f, type: 3}
+  - {fileID: 6952258063624776132, guid: 6a73ccce23e043e4fa2d154088911ee4, type: 3}
+  - {fileID: 6952258063624776132, guid: 59e8bdce98b935c479221fef07b3d2a7, type: 3}
+  modulo: 100
+  flowerMin: 0
+  flowerMax: 15
+  flowerPerClusterMin: 1
+  flowerPerClusterMax: 6
+  maxClusterDistance: 3
 --- !u!4 &426165151
 Transform:
   m_ObjectHideFlags: 0
@@ -1115,9 +1125,9 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.21868786
+    x: 0
     y: 0
-    width: 0.5626242
+    width: 1
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
@@ -16184,7 +16194,7 @@ MonoBehaviour:
   mowP1: {fileID: 1427701632}
   mowP2: {fileID: 1414283840}
   mowP0: {fileID: 1239169262}
-  scale: {x: 20.5, y: 11.5}
+  scale: 11.5
 --- !u!50 &1663580901
 Rigidbody2D:
   serializedVersion: 4
@@ -16478,8 +16488,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1887197213}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.25, y: 0, z: 0}
-  m_LocalScale: {x: 9.5, y: 50, z: 9.5}
+  m_LocalPosition: {x: -15.125, y: 0, z: 0}
+  m_LocalScale: {x: 19.24985, y: 50, z: 9.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -16562,8 +16572,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1990058195}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 10.25, z: 0}
-  m_LocalScale: {x: 50, y: 9.5, z: 9.5}
+  m_LocalPosition: {x: 0, y: 15.125, z: 0}
+  m_LocalScale: {x: 50, y: 19.24985, z: 9.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -16646,8 +16656,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1998539907}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -10.25, z: 0}
-  m_LocalScale: {x: 50, y: 9.5, z: 9.5}
+  m_LocalPosition: {x: 0, y: -15.125, z: 0}
+  m_LocalScale: {x: 50, y: 19.24985, z: 9.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -16702,3 +16712,4 @@ MonoBehaviour:
   newLawnButton: {fileID: 1131210620}
   newLawnText: {fileID: 409550141}
   grassSpawner: {fileID: 426165150}
+  seed: 0

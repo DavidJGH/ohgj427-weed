@@ -44,7 +44,7 @@ public class Game : MonoBehaviour
     private void Update()
     {
         displayCut = Mathf.Lerp(displayCut, cut, 5 * Time.deltaTime);
-        int percent = (int)Mathf.Floor((Mathf.Ceil(displayCut) / grassSpawner.count) * 100f);
+        int percent = (int)Mathf.Floor((Mathf.Ceil(displayCut) / grassSpawner.GetCount()) * 100f);
         pointText.text = percent.ToString();
         if (!percentEnabled && percent >= 85)
         {
